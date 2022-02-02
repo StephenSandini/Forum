@@ -1,0 +1,64 @@
+/*****************************************************************************************************
+*                               Stephen Sandini Style Sheet 
+*    Please reference https://www.w3schools.com/css
+*    for any more clarification to different adjustments or changes to be made to each item
+*****************************************************************************************************/
+
+/*****************************************************************************************************
+ *      The style.css page is to add styling, formatting, customizing the index.html
+ *      This will be done using class="..." as a type of tagging system to stay constitent through
+ *      the entire webpage. We can customize font, background images and colors.
+*****************************************************************************************************/
+/*****************************************************************************************************
+*                                        BANNER 
+*           Runs along the top of the page 
+*           Width adjusting to be 100% of the size
+*           Text: Color-> White, Alignment ->Centered, Size->2x H1 size
+*           
+*****************************************************************************************************/
+.my-banner {
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    background-color: navy;
+}
+
+/*****************************************************************************************************
+*                                      NAVIGATION BAR BUTTONS
+*          Allows a spacing of 12 pixels
+*****************************************************************************************************/
+li.nav-item{
+    padding-right: 12px;
+}
+/*****************************************************************************************************
+*                             PREAUTHENTICATION/ PRE-SIGNED IN / POST-SIGN OUT
+*           Modal that will hide certain buttons from being displayed on the navigation bar, as well 
+*           as hide others.
+*****************************************************************************************************/
+.modal-preauth{
+    display: block;   
+}
+/*****************************************************************************************************
+*                                  POSTAUTHENTICATION/ POST-SIGNED IN
+*           Modal that will display certain buttons from being displayed on the navitation bar, as well
+*           as hide others.
+*****************************************************************************************************/
+.modal-postauth{
+    display: none;
+}
+/*****************************************************************************************************
+*                                       INPUT
+*           Display: block will place each field on its own line
+*           Margin: top-margin, right-margin, bottom-margin, left-margin
+*           Padding: top, right, bottom, left
+*           Border-Width: top, right, bottm, left
+*****************************************************************************************************/
+input{
+    display: block;
+    margin: 10px 0;
+    padding: 8px 2px;
+    border-width: 0 0 2 px 0;
+    width: 100%;
+}
+
