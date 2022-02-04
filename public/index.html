@@ -30,16 +30,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item modal-preauth">
-            <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal-signin-form">Sign In</button>
+            <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal-signin-form">Sign
+              In</button>
           </li>
           <li class="nav-item modal-postauth">
             <button class="btn btn-outline-primary">Home</button>
           </li>
           <li class="nav-item modal-postauth">
-            <button class="btn btn-outline-primary">About</button>
+            <button class="btn btn-outline-warning">About</button>
           </li>
           <li class="nav-item modal-postauth">
-            <button class="btn btn-outline-primary">Sign Out</button>
+            <button id="navbar-signout" class="btn btn-outline-danger">Sign Out</button>
           </li>
         </ul>
         <!--Wrapped the form in a div class to allow css adjustments to pre/post authentication-->
@@ -77,6 +78,23 @@
               <button class="btn btn-outline-primary" type="submit">Sign In</button>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: POPUP INFORMATION BOX (STATIC): Will be used to display popup notification messages -->
+  <div class="modal fade" id="modal-informationbox" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modal-informationbox-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-informationbox-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-informationbox-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
