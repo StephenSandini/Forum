@@ -6,9 +6,11 @@
 *           {onAuthStateChanged: }
 ************************************************************************************************************/
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js';
+import { routing } from './route.js';
 import * as Elements from '../view-page/elements.js'
 import * as Util from '../view-page/util.js'
 import * as Constants from '../model/constants.js'
+import * as WelcomeMessage from '../view-page/messages/welcome_message.js'
 
 /***********************************************************  
 *           Creating the Authetication Function 
@@ -85,6 +87,10 @@ function authStateChangeObserver(user){
         for(let i = 0; i < elements.length; i++){
             elements[i].style.display = 'block';
         }
+
+        const pathname = window.location.pathname;
+        const hash = window.location.hash;
+        routing(pathname, hash);
     }else {
         //User is Null and state moved to signed out
         currentUser = null;
@@ -96,5 +102,8 @@ function authStateChangeObserver(user){
         for(let i = 0; i < elements.length; i++){
             elements[i].style.display = 'none';
         }
+
+        Elements.root.innerHTML = WelcomeMessage.html;
+
     }
 }

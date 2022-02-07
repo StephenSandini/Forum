@@ -7,6 +7,7 @@ export const root = document.getElementById('root');
  *                                      FORMS
 *******************************************************************************************************/
 export const formsSignIn = document.getElementById('form-signin');
+export const formCreateAThread = document.getElementById('form-create-a-thread');
 
 /*******************************************************************************************************
  *                                NAVIGATION BAR BUTTONS
@@ -38,6 +39,13 @@ export const modalInformationBox = {
 /******************************************************************************************************
  *                                  SIGN IN MODAL  
 *******************************************************************************************************
- *          This to allow editing of the sign in modal for users, similar to the one above.
+ *          This allows us to close the modal when an information/popup modal needs to popup.
 ******************************************************************************************************/ 
 export const modalSignIn = new bootstrap.Modal(document.getElementById('modal-signin-form'), {backdrop:'static'});
+/******************************************************************************************************
+ *                                  CREATE A THREAD MODAL  
+*******************************************************************************************************
+ *          This allows us to close the modal when an information/popup modal needs to popup.
+******************************************************************************************************/ 
+
+export const modalCreateAThread = new bootstrap.Modal(document.getElementById('modal-createathread'));
