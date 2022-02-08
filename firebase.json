@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": ""
+    "site": "ems-corner4gaming",
     "public": "public",
     "ignore": [
       "firebase.json",
