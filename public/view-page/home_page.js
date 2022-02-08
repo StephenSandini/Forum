@@ -101,6 +101,10 @@ function buildHomeScreen(threadList){
     //This will close off the table after the list populates
     html+= `</tbody></table>`;
 
+    if(threadList.length==0){
+        html+= `<h4> No Threads Found </h4>`;
+    }
+
     Elements.root.innerHTML=html;
 }
 
